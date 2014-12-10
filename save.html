@@ -1,0 +1,159 @@
+﻿<!DOCTYPE HTML>
+<html lang=zh-cn>
+<head>
+	<meta charset=utf-8>
+	<title>小型响应式模块-css3实例站</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
+	<meta name="keywords" content="HTML5 WEB编程 CSS3 CSS3培训 css3实例">
+	<meta name="description" content="对于设计人员和开发人员来说，CSS一直是web设计过程中重要的一部分，随着CSS3的出现以及越来越多的浏览器对它的支持，设计师们有了 更多的选择。用纯CSS也可以实现各种各样很酷的效果了，甚至是动画。虽然有些效果不能跨浏览器运行，有些只是展示并没什么实际用途，但仅用CSS实现出的这些效果似乎没什么可以挑剔的。..所以本站为css3爱好者提供css3实例！">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta name="generator" content="Editplus ">
+	<meta name="author" content="Author：走起来,QQ群：197326136">
+	<meta name="robots" content="ALL">
+	<meta name="copyright" content="走起来-css3实例站"> 
+	
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/iphone.css" rel="stylesheet" type="text/css">
+	<link href="css/ipad.css" rel="stylesheet" type="text/css">
+	<link href="css/save.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="s-btn">
+	<a class="a" data-index="1" onmousedown="breadNav(this);" href="javascript:void(0);">一列</a>
+	<a class="a" data-index="2" onmousedown="breadNav(this);" href="javascript:void(0);">两列</a>
+	<a class="a" data-index="3" onmousedown="breadNav(this);" href="javascript:void(0);">四列</a>
+	<div class="s-breadbtn g-gap10-top">
+		<a class="s-btn-cols s-btn-cols1" href="javascript:void(0);" onclick="appendModle('oneImgLeftRight');">一列-图文-图文左右排列</a>
+		<a class="s-btn-cols s-btn-cols1" href="javascript:void(0);" onclick="appendModle('oneWordList');">一列-文字-列</a>
+		<a class="s-btn-cols s-btn-cols1" href="javascript:void(0);" onclick="appendModle('oneWordTitle');">一列-文字-标题加描述列表</a>
+
+		<a class="s-btn-cols s-btn-cols2" href="javascript:void(0);" onclick="appendModle('twoImgLeftRight');">两列-图文-图文左右排列</a>
+		<a class="s-btn-cols s-btn-cols2" href="javascript:void(0);" onclick="appendModle('twoImgTopBottom');">两列-图文-图文上下排列</a>
+		<a class="s-btn-cols s-btn-cols2" href="javascript:void(0);" onclick="appendModle('twoWordList');">两列-文字-列表形式</a>
+		<a class="s-btn-cols s-btn-cols2" href="javascript:void(0);" onclick="appendModle('twoImgTopList');">两列-图文-图上列表下</a>
+
+		<a class="s-btn-cols s-btn-cols3" href="javascript:void(0);" onclick="appendModle('fourImgChangeTitle');">四列-图文-变成标题形式</a>
+		<a class="s-btn-cols s-btn-cols3" href="javascript:void(0);" onclick="appendModle('fourImgTopBottom');">四列-图文-图文上下排列</a>
+		<a class="s-btn-cols s-btn-cols3" href="javascript:void(0);" onclick="appendModle('fourImgTopList');">四列-图文-图上列表下排列</a>
+	</div>
+</div>
+<div id="right">
+	<div id="chiceModle">
+		
+	</div>
+</div>
+<div class="g-tip">
+	<i class="g-tip-close">CLOSE</i>
+	<textarea class="g-textarea" id="dsds"></textarea>
+</div>
+<a href="javascript:void(0);" class="g-save-btn g-save-yuanma" value="源码">源码</a>
+<a href="javascript:void(0);" -class="g-save-btn g-save-copy" style="position: absolute;top: 45px;right: 17px;" value="复制"><span id="forLoadSwf"></span></a>
+<a href="###" class="g-save-btn g-save-yuanma" value="源码" style="top: 80px;">下载</a>
+
+<script type="text/javascript" src="js/bailu.js"></script>
+<script type="text/javascript" src="js/html-beautify.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+
+<script type="text/javascript">
+	var count = 0;
+
+	function breadNav(obj){
+		//ty.index = 1;
+		var className = '.s-btn-cols' + $(obj).attr('data-index');
+		//console.log(className);
+
+		//if($('.s-btn-colshover').elements.length > 1){
+			for(var j=0;j<$('.s-btn-cols').elements.length;j++){
+				if($('.s-btn-cols').eq(j).hasClass('s-btn-colshover')){
+					$('.s-btn-cols').eq(j).removeClass('s-btn-colshover');
+				}
+			}
+		//}
+		//var ss = $('#chiceModle').elements[0].innerHTML;
+		
+
+		for(var j=0;j<$(className).elements.length;j++){
+			$(className).eq(j).addClass('s-btn-colshover');
+		}
+	}
+	//运行
+	function runExample(dModule){
+		var openExample = function(){
+	        var oCode = dModule.getElementsByTagName('textarea')[0].value;
+	        var winExample = window.open();
+	        winExample.document.write(oCode);
+	        //alert(winExample);
+	    };
+	    var oRunBtn = dModule.getElementsByTagName('input')[0];
+
+	    if(oRunBtn){
+	    	//ZHJ.util.addEvent(oRunBtn,'click',openExample);
+	    	oRunBtn.onclick = function(){
+	    		openExample();
+	    	};
+	    };
+	}
+	//runExample(document.getElementById('example'));
+
+	//appendModle
+	function appendModle(typeModle){
+		var data = new ModleData();
+		$(data[typeModle]).appendTo('#chiceModle');
+		resetCopy();
+	}
+	function resetCopy(){
+		pushYuanma();//更新文本框内容
+		copy();//copy
+	}
+	//复制
+	function copy(){
+		var copyCon = $(".g-textarea").elements[0].value;
+		var flashvars = {
+			content: encodeURIComponent(copyCon),
+			uri: 'images/flash_copy_btn.png'
+		};
+		var params = {
+			wmode: "transparent",
+			allowScriptAccess: "always"
+		};
+		swfobject.embedSWF("images/clipboard.swf", "forLoadSwf", "52", "25", "9.0.0", null, flashvars, params);
+
+		function copySuccess(){
+			//flash回调
+			alert("您已经复制成功，可以粘贴到编辑器");
+		}
+	}
+	copy();
+	//源码
+	function pushYuanma(){
+		var getChoiceModle = $('#chiceModle').find('.s-modle-contentview'),
+			modleStr = '';
+		for(var i=0;i<getChoiceModle.elements.length;i++){
+			modleStr += getChoiceModle.elements[i].innerHTML;
+		}
+		//$('.g-tip').show().val($('#chiceModle').find('.s-modle-contentview').html().elements[0].innerHTML);
+		
+		$('.g-textarea').val(modleStr);
+		//封装的value有问题
+		var teatareaValue = $(".g-textarea").elements[0].value;
+		//格式化html结构
+		$(".g-textarea").elements[0].value = style_html(teatareaValue, 4, "");
+	}
+	$('.g-save-yuanma').bind('click',function(){
+		pushYuanma();
+		$('.g-tip').show();
+
+		//复制
+		copy();
+	});
+	//关闭弹框
+	$('.g-tip-close').bind('click',function(){
+		$('.g-tip').hide();
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿/**
+* @preserve BAILU 1.0.0 | @zouqilai | http://www.css3train.com/
+*/
+
+/*iPads (portrait and landscape)*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	/* Styles */
+	.g-module{
+		margin-left: 0.625em;
+		margin-right: 0.625em;
+	}
+	.g-column2{
+		width: 100%;
+	}
+	.g-column2 img{
+		width: 15em;
+		display: block;
+		margin: 0 2em 0 0;
+	}
+	/*一列*/
+	.g-column1-leftimg{
+		margin-right: 3em;
+	}
+	.g-column1-rightimg{
+		margin-left: 3em;
+	}
+	.g-column1-leftimg img,
+	.g-column1-rightimg img{
+		width: 16em;
+	}
+	.g-column1 h3{
+		-font-size: 1em;
+	}
+	.g-column1 .g-column1-des p{
+		-line-height: 1.5;
+	}
+	/*两列*/
+	.g-module2-topimg img{
+		width: 100%;
+	}
+}
+
+/*iPads (landscape)*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	/* Styles */
+}
+
+/*iPads (portrait)*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	/* Styles */
+}
