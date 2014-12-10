@@ -199,7 +199,7 @@ function ModleData(){
 					'<img src="images/cols43.jpg" />'+
 					'<figcaption class="g-column4-des">'+
 						'<h3>开元免费</h3>'+
-						'<p>Egret引擎是一个基于BSD开源协议许可的永久免费的项目！</p>'+
+						'<p>css3train引擎是一个基于BSD开源协议许可的永久免费的项目！</p>'+
 					'</figcaption>'+
 				'</figure>'+
 			'</a>'+
@@ -208,7 +208,7 @@ function ModleData(){
 					'<img src="images/cols41.jpg" />'+
 					'<figcaption class="g-column4-des">'+
 						'<h3>开元免费</h3>'+
-						'<p>Egret引擎是一个基于BSD开源协议许可的永久免费的项目！</p>'+
+						'<p>css3train引擎是一个基于BSD开源协议许可的永久免费的项目！</p>'+
 					'</figcaption>'+
 				'</figure>'+
 			'</a>'+
@@ -217,7 +217,7 @@ function ModleData(){
 					'<img src="images/cols42.jpg" />'+
 					'<figcaption class="g-column4-des">'+
 						'<h3>开元免费</h3>'+
-						'<p>Egret引擎是一个基于BSD开源协议许可的永久免费的项目！</p>'+
+						'<p>css3train引擎是一个基于BSD开源协议许可的永久免费的项目！</p>'+
 					'</figcaption>'+
 				'</figure>'+
 			'</a>'+
@@ -226,7 +226,7 @@ function ModleData(){
 					'<img src="images/cols44.jpg" />'+
 					'<figcaption class="g-column4-des">'+
 						'<h3>开元免费</h3>'+
-						'<p>Egret引擎是一个基于BSD开源协议许可的永久免费的项目！</p>'+
+						'<p>css3train引擎是一个基于BSD开源协议许可的永久免费的项目！</p>'+
 					'</figcaption>'+
 				'</figure>'+
 			'</a>'+
