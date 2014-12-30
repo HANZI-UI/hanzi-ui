@@ -1,0 +1,447 @@
+﻿/* Global Reset */
+/**
+* @preserve BAILU 1.0.0 | @zouqilai | http://www.css3train.com/
+*/
+*,:before,:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h4, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;	
+}
+article, 
+aside, 
+details, 
+figcaption, 
+figure, 
+footer, 
+header, 
+hgroup, 
+menu, 
+nav, 
+section {
+	display: block;
+}
+ol, 
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table.pad td {
+	padding: 10px;
+}
+pre, code {
+	display: block;
+	max-width: 100%;
+	font: 12px/24px Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	margin:0 0 20px 0;
+	padding: 10px;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+/* General */
+
+* {
+	margin:0;
+	padding:0;
+	outline:0 none;
+}
+html{
+	font-size: 62.5%;
+}
+body {
+	font: normal;
+	line-height: 1.7;
+	font-size: 1.4rem;
+	font-family: "microsoft yahei",Helvetica, Arial, sans-serif;
+}
+pre, code {
+	background-color: #EDEDED;
+	border: 1px solid #D9D9D9;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+
+h4{
+	width: 100%;
+	display: block;
+	color:#000;
+	line-height: 1.2;
+	font-size: 1.5rem;
+}
+a:link {
+	color:#333;
+    -webkit-transition:color .25s linear;
+    -o-transition:color .25s linear;
+    -ms-transition:color .25s linear;
+    -moz-transition:color .25s linear;
+    transition:color .2s linear;
+}
+a:visited {
+	color:#333;
+}
+a:hover, a:focus{
+    color:#1aa1ec;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+
+
+.g-clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.g-clearfix { zoom:1; }
+.overflow-hidden{overflow: hidden;}
+
+/*间距*/
+.g-gap5-top{
+	margin-top: 0.3125rem;
+}
+.g-gap5-left{
+	margin-left: 0.3125rem;
+}
+.g-gap5-right{
+	margin-right: 0.3125rem;
+}
+.g-gap5-bottom{
+	margin-bottom: 0.3125rem;
+}
+
+.g-gap10-top{
+	margin-top: 0.625rem;
+}
+.g-gap10-left{
+	margin-left: 0.625rem;
+}
+.g-gap10-right{
+	margin-right: 0.625rem;
+}
+.g-gap10-bottom{
+	margin-bottom: 0.625rem;
+}
+
+.g-gap30-top{
+	margin-top:1.875rem;
+}
+.g-gap30-left{
+	margin-left:1.875rem;
+}
+.g-gap30-right{
+	margin-right:1.875rem;
+}
+.g-gap30-bottom{
+	margin-bottom:1.875rem;
+}
+
+.g-gap40-top{
+	margin-top:2.5rem;
+}
+.g-gap40-left{
+	margin-left:2.5rem;
+}
+.g-gap40-right{
+	margin-right:2.5rem;
+}
+.g-gap40-bottom{
+	margin-bottom:2.5rem;
+}
+
+.g-gap60-top{
+	margin-top:5rem;
+}
+.g-gap60-left{
+	margin-left:5rem;
+}
+.g-gap60-right{
+	margin-right:5rem;
+}
+.g-gap60-bottom{
+	margin-bottom:5rem;
+}
+
+.g-title{
+	font-weight: bold;
+	color: #333;
+	font-size: 1.8rem;
+}
+.g-title-ico{
+	width: 4px;
+	height: 1.4rem;
+	display: inline-block;
+	background: #00a2ff;
+	vertical-align: top;
+	margin-top: 7px;
+}
+/*外层*/
+.g-g-fixed{
+	max-width: 1000px;
+	min-height:30px;
+}
+.g-g-fixed [class*="g-u-"]{
+	min-height:30px;
+}
+.g-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+.g-container:before,
+.g-container:after {
+  content: " ";
+  display: table;
+}
+.g-container:after {
+  clear: both;
+}
+
+.g-container > .g-g {
+  width: auto;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.g-g {
+  margin: 0 auto;
+  width: 100%;
+}
+.g-g:before,
+.g-g:after {
+  content: " ";
+  display: table;
+}
+.g-g:after {
+  clear: both;
+}
+.g-g .g-g {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  width: auto;
+}
+.g-g .g-g.g-g-collapse {
+  margin-left: 0;
+  margin-right: 0;
+  width: auto;
+}
+@media only screen and (min-width:641px) {
+	.g-container {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+	.g-container > .g-g {
+		margin-left: -0.5rem;
+		margin-right: -0.5rem;
+	}
+	.g-g .g-g {
+		margin-left: -0.5rem;
+		margin-right: -0.5rem;
+	}
+}
+.g-g.g-g-collapse .g-g {
+  margin-left: 0;
+  margin-right: 0;
+}
+.g-g-collapse [class*="g-u-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/*屏幕较大，模块间距*/
+[class*="g-u-"] {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  float: left;
+  position: relative;
+}
+[class*="g-u-"] + [class*="g-u-"]:last-child {
+  float: right;
+}
+[class*="g-u-"] + [class*="g-u-"].g-u-end {
+  float: left;
+}
+@media only screen and (min-width:641px) {
+  [class*="g-u-"] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.g-u-1 {
+	width: 8.33333333%;
+}
+.g-u-2 {
+	width: 16.66666667%;
+}
+.g-u-3 {
+	width: 25%;
+}
+.g-u-4 {
+	width: 33.33333333%;
+}
+.g-u-5 {
+	width: 41.66666667%;
+}
+.g-u-6 {
+	width: 50%;
+}
+.g-u-7 {
+	width: 58.33333333%;
+}
+.g-u-8 {
+	width: 66.66666667%;
+}
+.g-u-9 {
+	width: 75%;
+}
+.g-u-10 {
+	width: 83.33333333%;
+}
+.g-u-11 {
+	width: 91.66666667%;
+}
+.g-u-12 {
+	width: 100%;
+}
+
+.g-g-border .g-g-border{
+	border-left: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+}
+.g-g-border .g-g-border [class*="g-u-"]{
+	border: 1px dashed #ccc;
+	border-left: none;
+	border-bottom: none;
+}
+.g-u-list{
+	padding-left: 0.5rem;
+	line-height: 1.8;
+}
+.g-u-list li{
+	margin-top:0.3125em;
+}
+
+.g-u-list li:before{
+	content: "•";
+	display: inline-block;
+	text-indent: -1em;
+	font-weight: bolder;
+	width: 0;
+	height: 0;
+}
+.g-module-title-more{
+	display: block;
+	font-size: 0.5rem;
+	font-weight: bold;
+}
+.g-module-more{
+	float: right;
+	font-weight: normal;
+	color:#1aa1ec;
+}
+.g-module-bigtitle{
+	font-size: 2rem;
+}
+.g-container .g-module-hovermore{
+	color:#1aa1ec;
+}
+
+.g-u-leftno-padding{
+	padding-left: 0;
+}
+.g-u-rightno-padding{
+	padding-right: 0;
+}
+
+
+@media only screen and (max-width:641px) {
+	.g-module-img{
+		display: none
+	}
+}
+
+.g-u-1 [class*="g-u-"],
+.g-u-2 [class*="g-u-"],
+.g-u-3 [class*="g-u-"],
+.g-u-4 [class*="g-u-"]{
+	width: 100%;
+}
+
+/*.g-u-1 [class*="g-u-"] .g-module-img,
+.g-u-2 [class*="g-u-"] .g-module-img,
+.g-u-3 [class*="g-u-"] .g-module-img,
+.g-u-4 [class*="g-u-"] .g-module-img,
+.g-u-1 [class*="g-u-"].g-module-img,
+.g-u-2 [class*="g-u-"].g-module-img,
+.g-u-3 [class*="g-u-"].g-module-img,
+.g-u-4 [class*="g-u-"].g-module-img{
+	display: none;
+}*/
+
+
+.g-u-5 .g-u-3,
+.g-u-6 .g-u-3,
+.g-u-7 .g-u-3{
+	width: 50%;
+	margin-top: 0.625rem;
+}
+.g-u-5 .g-u-3:nth-of-type(2n+1),
+.g-u-6 .g-u-3:nth-of-type(2n+1),
+.g-u-7 .g-u-3:nth-of-type(2n+1){
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Desktops and laptops*/
+@media only screen and (min-width : 1224px) {
+	
+}
+
+/*Large screens*/
+@media only screen and (min-width : 1824px) {
+	
+}

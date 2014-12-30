@@ -1,0 +1,103 @@
+﻿/**
+* @preserve BAILU 1.0.0 | @zouqilai | http://www.css3train.com/
+*/
+
+/* headOne */
+.g-module-4{
+	overflow:hidden;
+	cursor:pointer;
+	position: relative;
+}
+.g-module-4 img{
+	max-width:none;
+}
+.g-module-lefttip{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	background: rgba(255,255,255,.6);
+	padding: 1.875rem;
+	font-size: 1.3rem;
+}
+.g-module-4 img,
+.g-module-lefttip{
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	-ms-transition:all 0.3s;
+	transition:all 0.3s;
+}
+.g-module-lefttipA{
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	left:0;
+	z-index: 2;
+}
+.g-module-lefttip-title{
+	font-size:1.7rem;
+}
+.g-module-lefttip-name{
+	color: #666;
+}
+.g-module-lefttip-more li{
+	position: relative;
+	line-height: 18px;
+	padding-left: 6px;
+	height: 18px;
+	overflow: hidden;
+	color: #555;
+}
+.g-module-lefttip-more li i {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	vertical-align: middle;
+	left: 0;
+	top: 8px;
+	width: 2px;
+	height: 2px;
+	background: #666;
+}
+.g-module-4:hover img,
+.g-module-4:hover .g-module-lefttip{
+	-webkit-transform: translate(-5px,0); 
+	-moz-transform: translate(-5px,0); 
+	-ms-transform: translate(-5px,0); 
+	-o-transform: translate(-5px,0); 
+	transform: translate(-5px,0); 
+}
+
+
+
+@media only screen and (max-width : 767px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

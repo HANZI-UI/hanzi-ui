@@ -14,32 +14,94 @@
 	<meta name="robots" content="ALL">
 	<meta name="copyright" content="走起来-css3实例站"> 
 	
-	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/hanziui.css" rel="stylesheet" type="text/css">
 	<link href="css/iphone.css" rel="stylesheet" type="text/css">
 	<link href="css/ipad.css" rel="stylesheet" type="text/css">
+	<link href="css/head.css" rel="stylesheet" type="text/css">
+	<link href="css/module.css" rel="stylesheet" type="text/css">
 	<link href="css/save.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
-<div class="s-btn">
-	<a class="a" data-index="1" onmousedown="breadNav(this);" href="javascript:void(0);">一列</a>
-	<a class="a" data-index="2" onmousedown="breadNav(this);" href="javascript:void(0);">两列</a>
-	<a class="a" data-index="3" onmousedown="breadNav(this);" href="javascript:void(0);">四列</a>
-	<div class="s-breadbtn g-gap10-top">
-		<a class="s-btn-cols s-btn-cols1" href="javascript:void(0);" onclick="appendModle('oneImgLeftRight');">一列-图文-图文左右排列</a>
-		<a class="s-btn-cols s-btn-cols1" href="javascript:void(0);" onclick="appendModle('oneWordList');">一列-文字-列</a>
-		<a class="s-btn-cols s-btn-cols1" href="javascript:void(0);" onclick="appendModle('oneWordTitle');">一列-文字-标题加描述列表</a>
-
-		<a class="s-btn-cols s-btn-cols2" href="javascript:void(0);" onclick="appendModle('twoImgLeftRight');">两列-图文-图文左右排列</a>
-		<a class="s-btn-cols s-btn-cols2" href="javascript:void(0);" onclick="appendModle('twoImgTopBottom');">两列-图文-图文上下排列</a>
-		<a class="s-btn-cols s-btn-cols2" href="javascript:void(0);" onclick="appendModle('twoWordList');">两列-文字-列表形式</a>
-		<a class="s-btn-cols s-btn-cols2" href="javascript:void(0);" onclick="appendModle('twoImgTopList');">两列-图文-图上列表下</a>
-
-		<a class="s-btn-cols s-btn-cols3" href="javascript:void(0);" onclick="appendModle('fourImgChangeTitle');">四列-图文-变成标题形式</a>
-		<a class="s-btn-cols s-btn-cols3" href="javascript:void(0);" onclick="appendModle('fourImgTopBottom');">四列-图文-图文上下排列</a>
-		<a class="s-btn-cols s-btn-cols3" href="javascript:void(0);" onclick="appendModle('fourImgTopList');">四列-图文-图上列表下排列</a>
+<div class="s-btns-nav">
+	<div id="s-head" class="s-module-bottom">
+		<span class="s-module-title">头</span>
+		<div class="s-head-module">
+			<span class="s-middle-module-img" data-module="headOne"><i class="s-module-ico s-middle-module-imgleftright" title="头"></i></span>
+		</div>
 	</div>
+	<div id="s-banner" class="s-module-bottom">
+		<span class="s-module-title">幻灯片</span>
+		<div class="s-banner-module">
+			<span class="s-middle-module-img" data-module="bannerOne"><i class="s-module-ico s-middle-module-imgleftright" title="图"></i></span>
+		</div>
+	</div>
+	<div id="s-middle" class="s-module-bottom">
+		<span class="s-module-title">中间</span>
+		<span class="s-module-title">复合模块</span>
+		<div class="s-middle-module" style="display:none">
+			<span class="s-middle-module-img s-middle-module-active" data-module="-one"><i class="s-module-ico s-middle-module-one" title="模块整行排列"></i></span>
+			<span class="s-middle-module-img" data-module="-lefts"><i class="s-module-ico s-middle-module-lefts" title="左右排列-左边宽度窄"></i></span>
+			<span class="s-middle-module-img" data-module="-leftb"><i class="s-module-ico s-middle-module-leftb" title="左右排列-右边宽度窄"></i></span>
+		</div>
+		<div class="s-middle-module s-middle-module-one">
+			<span class="s-middle-module-img" data-module="oneImgLeftRight"><i class="s-module-ico s-middle-module-imgleftright" title="一列-图文-图文左右排列"></i></span>
+			<span class="s-middle-module-img" data-module="oneWordList"><i class="s-module-ico s-middle-module-wordlist" title="一列-文字-列"></i></span>
+			<span class="s-middle-module-img" data-module="oneWordTitle"><i class="s-module-ico s-middle-module-wordtitle" title="一列-文字-标题加描述列表"></i></span>
+		</div>
+		<div class="s-middle-module s-middle-module-two">
+			<span class="s-middle-module-img" data-module="twoImgLeftRight"><i class="s-module-ico s-middle-module-imgleftright" title="两列-图文-图文左右排列"></i></span>
+			<span class="s-middle-module-img" data-module="twoImgTopBottom"><i class="s-module-ico s-middle-module-imgtopbottom" title="两列-图文-图文上下排列"></i></span>
+			<span class="s-middle-module-img" data-module="twoWordList"><i class="s-module-ico s-middle-module-wordlist" title="两列-文字-列表形式"></i></span>
+			<br>
+			<span class="s-middle-module-img" data-module="twoImgTopList"><i class="s-module-ico s-middle-module-imgtoplist" title="两列-图文-图上列表下"></i></span>
+		</div>
+		<div class="s-middle-module s-middle-module-three">
+			<span class="s-middle-module-img" data-module="threeJdImgTip"><i class="s-module-ico" title="三列-图文-Tip在图左边"></i></span>
+			<span class="s-middle-module-img" data-module="threeBorder"><i class="s-module-ico" title="三列-图文-边框"></i></span>
+		</div>
+		<div class="s-middle-module s-middle-module-four">
+			<span class="s-middle-module-img" data-module="fourImgChangeTitle"><i class="s-module-ico s-middle-module-imgchangetitle" title="四列-图文-变成标题形式"></i></span>
+			<span class="s-middle-module-img" data-module="fourImgTopBottom"><i class="s-module-ico s-middle-module-imgtopbottom" title="四列-图文-图文上下排列"></i></span>
+			<span class="s-middle-module-img" data-module="fourImgTopList"><i class="s-module-ico s-middle-module-imgtoplist" title="四列-图文-图上列表下排列"></i></span>
+		</div>
+		<span class="s-module-title">单模块</span>
+		<select class="s-module-choice-grid">
+			<option value="请选择" data-str="请选择">选择</option>
+			<!--<option value="0,12" data-str="<section class=&quot;g-container g-g-fixed g-clearfix&quot;></section>">0,12</option>-->
+			<option value="1,11" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-1,11</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-1&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-11&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">1,11</option>
+
+			<option value="2,10" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-2,10</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-2&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-10&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">2,10</option>
+
+			<option value="3,9" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-3,9</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-3&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-9&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">3,9</option>
+
+			<option value="4,8" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-4,8</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-4&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-8&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">4,8</option>
+
+			<option value="5,7" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-5,7</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-5&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-7&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">5,7</option>
+
+			<option value="6,6" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-6,6</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-6&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-6&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">6,6</option>
+
+			<option value="7,5" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-7,5</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-7&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-5&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">7,5</option>
+
+			<option value="8,4" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-8,4</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-8&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-4&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">8,4</option>
+
+			<option value="9,3" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-9,3</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-9&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-3&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">9,3</option>
+
+			<option value="10,2" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-10,2</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-10&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-2&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">10,2</option>
+
+			<option value="11,1" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>两列-11,1</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-11&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-1&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">11,1</option>
+
+			<option value="3,3,3,3" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>四列-3,3,3,3</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-3&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-3&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-3&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-3&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">3,3,3,3</option>
+			<option value="4,4,4" data-str="<div class=&quot;s-isClose-btn&quot;><div class=&quot;s-modle-contentview&quot;><div class=&quot;g-container g-title g-gap60-top g-gap30-bottom&quot;><span class=&quot;g-title-ico g-gap10-right&quot;></span>三列-4,4,4</div><section class=&quot;g-container g-g-fixed g-clearfix&quot;><div class=&quot;g-g&quot;><div class=&quot;g-u-4&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-4&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div><div class=&quot;g-u-4&quot;><span class=&quot;s-module-choice-grid-btn&quot;>点击我</span></div></div></section></div><i class=&quot;s-module-edit&quot;>编辑</i><i class=&quot;s-close-btn&quot;>CLOSE</i></div>">4,4,4</option>
+		</select>
+	</div>
+	<div id="s-foot" class="s-module-bottom">
+		<span class="s-module-title">脚</span>
+		<div class="s-foot-module"></div>
+	</div>
+	<span class="s-nav-close" style="position:absolute;width:20px;height:20px;right:0;top:0;cursor: pointer;background:#eaeaea;text-align:center;">关</span>
 </div>
+<span class="s-nav-show" style="position:absolute;width:20px;height:20px;left:0;top:0;cursor: pointer;background:#eaeaea;text-align:center;display:none">展</span>
 <div id="right">
 	<div id="chiceModle">
 		
@@ -48,112 +110,181 @@
 <div class="g-tip">
 	<i class="g-tip-close">CLOSE</i>
 	<textarea class="g-textarea" id="dsds"></textarea>
+	<div class="g-tip-angle-btns" style="display:block;">
+		<span class="s-middle-module-img" data-module="oneImgLeftRight"><i class="s-module-ico s-middle-module-imgtopbottom" title="111"></i></span>
+		<span class="s-middle-module-img" data-module="oneWordList"><i class="s-module-ico s-middle-module-wordlist" title="一列-文字-列"></i></span>
+		<span class="s-middle-module-img" data-module="oneWordTitle"><i class="s-module-ico s-middle-module-wordtitle" title="一列-文字-标题加描述列表"></i></span>
+		<span class="s-middle-module-img" data-module="twoImgLeftRight"><i class="s-module-ico s-middle-module-imgleftright" title="两列-图文-图文左右排列"></i></span>
+		<span class="s-middle-module-img" data-module="twoImgTopBottom"><i class="s-module-ico s-middle-module-imgtopbottom" title="两列-图文-图文上下排列"></i></span>
+		<span class="s-middle-module-img" data-module="twoWordList"><i class="s-module-ico s-middle-module-wordlist" title="两列-文字-列表形式"></i></span>
+		<span class="s-middle-module-img" data-module="twoImgTopList"><i class="s-module-ico s-middle-module-imgtoplist" title="两列-图文-图上列表下"></i></span>
+		<span class="s-middle-module-img" data-module="fourImgChangeTitle"><i class="s-module-ico s-middle-module-imgchangetitle" title="四列-图文-变成标题形式"></i></span>
+		<span class="s-middle-module-img" data-module="fourImgTopBottom"><i class="s-module-ico s-middle-module-imgtopbottom" title="四列-图文-图文上下排列"></i></span>
+		<span class="s-middle-module-img" data-module="fourImgTopList"><i class="s-module-ico s-middle-module-imgtoplist" title="四列-图文-图上列表下排列"></i></span>
+	</div>
 </div>
-<a href="javascript:void(0);" class="g-save-btn g-save-yuanma" value="源码">源码</a>
-<a href="javascript:void(0);" -class="g-save-btn g-save-copy" style="position: absolute;top: 45px;right: 17px;" value="复制"><span id="forLoadSwf"></span></a>
-<a href="###" class="g-save-btn g-save-yuanma" value="源码" style="top: 80px;">下载</a>
 
-<script type="text/javascript" src="js/zouqilai.js"></script>
+<a href="###" class="s-btn" value="源码">下载</a>
+<a href="javascript:void(0);" class="s-btn g-save-yuanma" value="源码">源码</a>
+<a href="javascript:void(0);" style="position: absolute;top: 67px;right: 17px;" value="复制"><span id="forLoadSwf"></span></a>
+
+<script type="text/javascript" src="js/bailu.js"></script>
 <script type="text/javascript" src="js/html-beautify.js"></script>
 <script type="text/javascript" src="js/swfobject.js"></script>
 <script type="text/javascript" src="js/data.js"></script>
 
 <script type="text/javascript">
-	var count = 0;
-
-	function breadNav(obj){
-		//ty.index = 1;
-		var className = '.s-btn-cols' + $(obj).attr('data-index');
-		//console.log(className);
-
-		//if($('.s-btn-colshover').elements.length > 1){
-			for(var j=0;j<$('.s-btn-cols').elements.length;j++){
-				if($('.s-btn-cols').eq(j).hasClass('s-btn-colshover')){
-					$('.s-btn-cols').eq(j).removeClass('s-btn-colshover');
-				}
-			}
-		//}
-		//var ss = $('#chiceModle').elements[0].innerHTML;
-		
-
-		for(var j=0;j<$(className).elements.length;j++){
-			$(className).eq(j).addClass('s-btn-colshover');
+	var ZHJ = {};
+	//基础
+	ZHJ.until = {
+		doWhileExists:function(obj,foo){
+			if(obj){foo(obj);}
 		}
 	}
-	//运行
-	function runExample(dModule){
-		var openExample = function(){
-	        var oCode = dModule.getElementsByTagName('textarea')[0].value;
-	        var winExample = window.open();
-	        winExample.document.write(oCode);
-	        //alert(winExample);
-	    };
-	    var oRunBtn = dModule.getElementsByTagName('input')[0];
 
-	    if(oRunBtn){
-	    	//ZHJ.util.addEvent(oRunBtn,'click',openExample);
-	    	oRunBtn.onclick = function(){
-	    		openExample();
-	    	};
-	    };
-	}
-	//runExample(document.getElementById('example'));
+	ZHJ.choiceModule = function(dModule){
+		if(!dModule){return;}
+		this.dModule = dModule;
+		this.init();
+	};
+	//页面
+	ZHJ.choiceModule.prototype = {
+		choice: function(){
+			var active = $('.s-middle-module-active'),
+				_this = this;
+			this.dModule.bind('click',function(){
+				var module = $(this).attr('data-module');
+					active.removeClass('s-middle-module-active');
+					$(this).addClass('s-middle-module-active');
+					active = $(this);
+					//console.log(parentNode);
+					if(!/^-/.test(module)){
+						if($(this.parentNode).hasClass('g-tip-angle-btns')){
+							_this.appendModle(module,parentNode);
+						}else{
+							_this.appendModle(module,'#chiceModle');
+						}
+						
+					}else{
+						//选择布局 如左右排列
+					}
+					
+			});
+		},
+		//插模块
+		appendModle: function(typeModle,appendToObj){
+			var _this = this;
 
-	//appendModle
-	function appendModle(typeModle){
-		var data = new ModleData();
-		$(data[typeModle]).appendTo('#chiceModle');
-		resetCopy();
-	}
-	function resetCopy(){
-		pushYuanma();//更新文本框内容
-		copy();//copy
-	}
-	//复制
-	function copy(){
-		var copyCon = $(".g-textarea").elements[0].value;
-		var flashvars = {
-			content: encodeURIComponent(copyCon),
-			uri: 'images/flash_copy_btn.png'
-		};
-		var params = {
-			wmode: "transparent",
-			allowScriptAccess: "always"
-		};
-		swfobject.embedSWF("images/clipboard.swf", "forLoadSwf", "52", "25", "9.0.0", null, flashvars, params);
+			//_this.pushYuanma();
 
-		function copySuccess(){
-			//flash回调
-			alert("您已经复制成功，可以粘贴到编辑器");
-		}
-	}
-	copy();
-	//源码
-	function pushYuanma(){
-		var getChoiceModle = $('#chiceModle').find('.s-modle-contentview'),
-			modleStr = '';
-		for(var i=0;i<getChoiceModle.elements.length;i++){
-			modleStr += getChoiceModle.elements[i].innerHTML;
-		}
-		//$('.g-tip').show().val($('#chiceModle').find('.s-modle-contentview').html().elements[0].innerHTML);
-		
-		$('.g-textarea').val(modleStr);
-		//封装的value有问题
-		var teatareaValue = $(".g-textarea").elements[0].value;
-		//格式化html结构
-		$(".g-textarea").elements[0].value = style_html(teatareaValue, 4, "");
-	}
-	$('.g-save-yuanma').bind('click',function(){
-		pushYuanma();
-		$('.g-tip').show();
-
+			var data = new ModleData();
+			$(data[typeModle]).appendTo(appendToObj);
+			_this.pushYuanma();//copy
+			//resetCopy();
+		},
 		//复制
-		copy();
-	});
-	//关闭弹框
-	$('.g-tip-close').bind('click',function(){
-		$('.g-tip').hide();
-	});
+		copy: function(){
+			var copyCon = $(".g-textarea").elements[0].value;
+				var flashvars = {
+					content: encodeURIComponent(copyCon),
+					uri: 'images/flash_copy_btn.png'
+				};
+				var params = {
+					wmode: "transparent",
+					allowScriptAccess: "always"
+				};
+				swfobject.embedSWF("images/clipboard.swf", "forLoadSwf", "52", "25", "9.0.0", null, flashvars, params);
+
+				function copySuccess(){
+					//flash回调
+					alert("您已经复制成功，可以粘贴到编辑器");
+				}
+		},
+		//源码到文本框
+		pushYuanma: function(){
+			var getChoiceModle = $('#chiceModle').find('.s-modle-contentview'),
+				modleStr = '',
+				_this = this;
+				for(var i=0;i<getChoiceModle.elements.length;i++){
+					modleStr += getChoiceModle.elements[i].innerHTML;
+				}
+				
+				$('.g-textarea').val(modleStr);
+				//封装的value有问题
+				var teatareaValue = $(".g-textarea").elements[0].value;
+				//格式化html结构
+				$(".g-textarea").elements[0].value = style_html(teatareaValue, 4, "");
+
+				
+				_this.copy();
+		},
+		init: function(){
+			this.choice();
+		}
+	};
+	ZHJ.choiceModule.documentEvent = function(obj){
+		var _this = new ZHJ.choiceModule();
+		obj.bind('click', function(ev){
+			var ev = ev || window.event,
+				oTarget = ev.target||ev.srcElement;
+
+				//源码
+				if(oTarget.tagName == 'A' && $(oTarget).hasClass('g-save-yuanma')){
+					_this.pushYuanma();
+					$('.g-tip').show().find('.g-textarea').show();
+					$('.g-tip-angle-btns').hide();
+				}
+				//删除模块
+				if(oTarget.tagName == 'I' && $(oTarget).hasClass('s-close-btn')){
+					$(oTarget.parentNode).remove();
+					_this.pushYuanma();
+				}
+				//关闭弹框
+				if(oTarget.tagName == 'I' && $(oTarget).hasClass('g-tip-close')){
+					$('.g-tip').hide();
+				}
+				//
+				if(oTarget.tagName == 'SPAN' && $(oTarget).hasClass('s-nav-close')){
+					$(oTarget.parentNode).css('display','none');
+					$('.s-nav-show').show();
+				}
+				//
+				if(oTarget.tagName == 'SPAN' && $(oTarget).hasClass('s-nav-show')){
+					$('.s-btns-nav').show();
+					$('.s-nav-show').hide();
+				}
+				//点击我 
+				if(oTarget.tagName == 'SPAN' && $(oTarget).hasClass('s-module-choice-grid-btn')){
+					parentNode = oTarget.parentNode;
+					$('.g-tip').show();
+					$('.g-tip-angle-btns').show();
+					$('.g-textarea').hide();
+				}
+
+		});
+		//单模块选择
+		if(obj.find('.s-module-choice-grid').elements[0]){
+			obj.find('.s-module-choice-grid').bind('change',function(ev){
+				var ev = ev || window.event,
+					oTarget = ev.target||ev.srcElement,
+					oTargetSelected = oTarget.options[oTarget.options.selectedIndex];
+					$($(oTargetSelected).attr('data-str')).appendTo('#chiceModle');
+			});
+		}
+	};
+	
+	ZHJ.choiceModule.modules = function(dModule){
+		var apiInstance = new ZHJ.choiceModule(dModule);
+	};
+
+	ZHJ.until.doWhileExists($('.s-middle-module-img'), ZHJ.choiceModule.modules);
+	ZHJ.until.doWhileExists($(document), ZHJ.choiceModule.documentEvent);
+
+
+	console.log("希望有%c前端开发工程师和交互设计师加入team",'color:green');
+	console.log("邮箱:%c871925574@qq.com",'color:green');
+	console.log("联系人:%c走起来",'color:green');
+
 </script>
 </body>
 </html>
