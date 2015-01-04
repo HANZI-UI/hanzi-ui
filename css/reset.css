@@ -237,7 +237,37 @@ a.g-module-more{
 	border: 0;
 	box-shadow: none;
 }
-
+	/* 四列-图文-标题滑动显示 */
+.g-column4-coverbox{
+	position: relative;
+}
+.g-column4-cover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0.625em;
+	right: 0;
+	overflow: hidden;
+}
+.g-column4-cover:hover .g-column4-covertitle{
+	margin-top: -4em;
+}
+.g-column4-covertitle{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	padding: 1em 0;
+	margin-top: 0;
+	-moz-transition: margin-top 0.3s linear; /* Firefox 4 */
+	-webkit-transition: margin-top 0.3s linear; /* Safari 和 Chrome */
+	-o-transition: margin-top 0.3s linear; /* Opera */
+	transition: margin-top 0.3s linear;
+}
+.g-column4-coverbox:nth-child(1) .g-column4-covertitle{background-color: rgba(255,0,0,0.7);}
+.g-column4-coverbox:nth-child(2) .g-column4-covertitle{background-color: rgba(0,0,255,0.7);}
+.g-column4-coverbox:nth-child(3) .g-column4-covertitle{background-color: rgba(0,255,0,0.7);}
+.g-column4-coverbox:nth-child(4) .g-column4-covertitle{background-color: rgba(255,255,0,0.7);}
 
 /************************ 4列布局 end ***/
 
@@ -354,6 +384,10 @@ a.g-module-more{
 	.g-column4{
 		width: 100%;
 		margin-right: 0%;
+	}
+	/*四列-图片-标题滑动显示 不滑动*/
+	.g-column4-covertitle{
+		margin-top: -4em;
 	}
 	/*四列图标 标题展示 iphone4/4s*/
 	.g-column4-tel-title{

@@ -266,5 +266,47 @@ function ModleData(){
 			'</ul>'+
 		'</div>'+
 	'</section></div><i class="s-close-btn" onclick="$(this.parentNode).remove();resetCopy();">CLOSE</i></div>';
-
+	/*四列-图片-标题滑动显示*/
+	this.fourImgSlideTitle = '<div class="s-isClose-btn"><div class="s-modle-contentview"><div class="g-module g-column4-h">四列-图片-标题滑动显示</div><section class="g-module g-gap30-top  g-clearfix">'+
+		'<div class="g-column4 g-column4-a g-column4-coverbox g-gap10-top">'+
+			'<img src="images/cols41.jpg" alt="吞吞吐吐" />'+
+			'<a href="#">'+
+				'<div class="g-column4-cover">'+
+					'<div class="g-column4-covertitle">'+
+						'<h3>开源免费软件1</h3>'+
+					'</div>'+
+				'</div>'+
+			'</a>'+
+		'</div>'+
+		'<div class="g-column4 g-column4-a g-column4-coverbox g-gap10-top">'+
+			'<img src="images/cols42.jpg" alt="吞吞吐吐" />'+
+			'<a href="#">'+
+				'<div class="g-column4-cover">'+
+					'<div class="g-column4-covertitle">'+
+						'<h3>开源免费软件2</h3>'+
+					'</div>'+
+				'</div>'+
+			'</a>'+
+		'</div>'+
+		'<div class="g-column4 g-column4-a g-column4-coverbox g-gap10-top">'+
+			'<img src="images/cols43.jpg" alt="吞吞吐吐" />'+
+			'<a href="#">'+
+				'<div class="g-column4-cover">'+
+					'<div class="g-column4-covertitle">'+
+						'<h3>开源免费软件3</h3>'+
+					'</div>'+
+				'</div>'+
+			'</a>'+
+		'</div>'+
+		'<div class="g-column4 g-column4-a g-column4-coverbox g-gap10-top">'+
+			'<img src="images/cols44.jpg" alt="吞吞吐吐" />'+
+			'<a href="#">'+
+				'<div class="g-column4-cover">'+
+					'<div class="g-column4-covertitle">'+
+						'<h3>开源免费软件4</h3>'+
+					'</div>'+
+				'</div>'+
+			'</a>'+
+		'</div>'+
+	'</section></div><i class="s-close-btn" onclick="$(this.parentNode).remove();resetCopy();">CLOSE</i></div>';
 }
